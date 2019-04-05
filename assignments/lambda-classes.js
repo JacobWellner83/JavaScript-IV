@@ -11,3 +11,25 @@ class Person{
         return `Hello, my name is ${this.name}, I am from ${this.location}`
     }
 }
+
+class Instructor extends Person{
+    constructor(variables){
+        super(variables);
+        this.specialty = variables.specialty;
+        this.favLanguage = variables.favLanguage;
+        this.catchPhrase = variables.catchPhrase;
+    }
+    demo(subject){
+        console.log(`Today we are learning about ${subject}`)
+    }
+    grade(student){
+        console.log(`${student.name} recieves a perfect score on {subject}`)
+    }
+}
+
+class Student extends Person{
+    constructor(variables){
+        super(variables);
+        this.previousBackground =variables.pr
+    }
+}
