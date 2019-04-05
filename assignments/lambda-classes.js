@@ -58,3 +58,41 @@ class ProjectManager extends Instructor{
         `${name} debugs ${student.name}'s code on ${subject}`
     }
 }
+
+//Checks
+
+const Fredo = new Instructor({
+    name: 'Fredo',
+    location: 'Malta',
+    age: 42,
+    gender: 'Male',
+    favLanguage: 'C++',
+    specialty: 'Web Design',
+    catchPhrase: 'Sic Semper Tyranus!'
+})
+
+const Alex = new Student({
+    name: 'Alex',
+    age: 19,
+    location: 'Boston',
+    gender: 'Female',
+    previousBackground: 'Waitress',
+    className: 'WebPT4',
+    favSubjects: [
+        'CS',
+        'Environmental Science',
+    ],
+})
+
+const Charlie = new ProjectManager({
+    name: 'Charlie',
+    age: 38,
+    location: 'Miami',
+    gender: female,
+    gradClassName: 'CS8',
+    favInstructor: 'Cam',
+    favLanguage: 'JavaScript',
+    specialty: 'Back-End',
+    catchPhrase: 'Silence is golden.'
+})
+
