@@ -4,11 +4,11 @@ class Person{
     constructor(variables){
         this.name = variables.name;
         this.age = variables.age;
-        this.location = variable.location;
+        this.location = variables.location;
         this.gender = variables.gender;
     }
     speak(){
-        return `Hello, my name is ${this.name}, I am from ${this.location}`
+        return `Hello, my name is ${this.name}, I am from ${this.location}.`
     }
 }
 
@@ -20,10 +20,10 @@ class Instructor extends Person{
         this.catchPhrase = variables.catchPhrase;
     }
     demo(subject){
-        console.log(`Today we are learning about ${subject}`)
+        console.log(`Today we are learning about ${subject}.`)
     }
     grade(student){
-        console.log(`${student.name} recieves a perfect score on {subject}`)
+        console.log(`${student.name} recieves a perfect score on {subject}.`)
     }
 }
 
@@ -38,10 +38,10 @@ class Student extends Person{
         this.favSubjects.forEach(subject => console.log(`${subject}`));
     }
     PRAssignment(){
-        `${student.name} has submitted a PR for ${subject}`
+        `${student.name} has submitted a PR for ${subject}.`
     }
     sprintChallenge(){
-        `${student.name} has begun sprint challenge on ${subject}`
+        `${student.name} has begun sprint challenge on ${subject}.`
     }
 }
 
@@ -88,11 +88,21 @@ const Charlie = new ProjectManager({
     name: 'Charlie',
     age: 38,
     location: 'Miami',
-    gender: female,
+    gender: 'Female',
     gradClassName: 'CS8',
     favInstructor: 'Cam',
     favLanguage: 'JavaScript',
     specialty: 'Back-End',
     catchPhrase: 'Silence is golden.'
 })
+
+//Proofs
+//Person
+
+console.log(Fredo.speak())
+console.log(Alex.speak())
+console.log(Charlie.speak())
+
+//Student
+
 
