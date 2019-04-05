@@ -30,6 +30,18 @@ class Instructor extends Person{
 class Student extends Person{
     constructor(variables){
         super(variables);
-        this.previousBackground =variables.pr
+        this.previousBackground = variables.previousBackground;
+        this.className = variables.className;
+        this.favSubjects = variables.favSubjects;
+    }
+    listsSubjects(){
+        this.favSubjects.forEach(subject => console.log(`${subject}`));
+    }
+    PRAssignment(){
+        `${student.name} has submitted a PR for ${subject}`
+    }
+    sprintChallenge(){
+        `${student.name} has begun sprint challenge on ${subject}`
     }
 }
+
