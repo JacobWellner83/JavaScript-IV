@@ -48,7 +48,7 @@ class Student extends Person{
 class ProjectManager extends Instructor{
     constructor(variables){
         super(variables);
-        this.gradClassName = variables.graClassName;
+        this.gradClassName = variables.gradClassName;
         this.favInstructor = variables.favInstructor;
     }
     standUp(){
@@ -105,4 +105,19 @@ console.log(Charlie.speak())
 
 //Student
 
+console.log(Alex.listsSubjects())
+console.log(Alex.previousBackground)
+console.log(Alex.className)
 
+//Instructor
+
+console.log(Fredo.favLanguage)
+console.log(Fredo.catchPhrase)
+console.log(Fredo.age)
+
+//Project Manager
+
+console.log(Charlie.age)
+console.log(Charlie.gradClassName)
+console.log(Charlie.favInstructor)
+console.log(Charlie.catchPhrase)
